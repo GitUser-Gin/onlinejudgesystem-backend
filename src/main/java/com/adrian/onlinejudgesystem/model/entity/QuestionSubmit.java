@@ -11,15 +11,15 @@ import java.util.Date;
 
 /**
  * 题目提交
- * @TableName post_submit
+ * @TableName question_submit
  */
-@TableName(value ="post_submit")
+@TableName(value ="question_submit")
 @Data
 public class QuestionSubmit implements Serializable {
     /**
      * id
      */
-    @TableId(type = IdType.AUTO)
+    @TableId(type = IdType.ASSIGN_ID)
     private Long id;
 
     /**

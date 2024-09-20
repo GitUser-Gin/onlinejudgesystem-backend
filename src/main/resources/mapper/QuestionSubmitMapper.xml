@@ -2,15 +2,15 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="generator.mapper.QuestionSubmitMapper">
+<mapper namespace="com.adrian.onlinejudgesystem.mapper.QuestionSubmitMapper">
 
-    <resultMap id="BaseResultMap" type="generator.domain.QuestionSubmit">
+    <resultMap id="BaseResultMap" type="com.adrian.onlinejudgesystem.model.entity.QuestionSubmit">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="language" column="language" jdbcType="VARCHAR"/>
             <result property="code" column="code" jdbcType="VARCHAR"/>
             <result property="judgeInfo" column="judgeInfo" jdbcType="VARCHAR"/>
             <result property="status" column="status" jdbcType="INTEGER"/>
-            <result property="postId" column="postId" jdbcType="BIGINT"/>
+            <result property="questionId" column="questionId" jdbcType="BIGINT"/>
             <result property="userId" column="userId" jdbcType="BIGINT"/>
             <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
@@ -19,7 +19,7 @@
 
     <sql id="Base_Column_List">
         id,language,code,
-        judgeInfo,status,postId,
+        judgeInfo,status,questionId,
         userId,createTime,updateTime,
         isDelete
     </sql>
